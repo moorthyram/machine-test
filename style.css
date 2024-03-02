@@ -1,0 +1,100 @@
+body {
+    font-family: "Inter", sans-serif;
+    background: #f1f5f9;
+}
+
+.hero {
+    background: #f1f5f9;
+    background: url(./images/vector-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    height: 110vh;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    margin-bottom: 150px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+    font-weight: 600 !important;
+    padding: 12px !important;
+    border-radius: 6px !important;
+    width: 130px;
+}
+
+.box {
+    padding: 40px;
+    border-radius: 5px;
+    background: #ffffff;
+    border: 1px solid rgb(237 237 237);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+label {
+    padding: 6px 0;
+}
+
+.pattern {
+    position: absolute;
+    left: 140px;
+    bottom: -130px;
+    z-index: -1;
+}
+
+.form-control, .form-select{
+    padding: 0.75rem;
+}
+
+form label.error {
+    color: red;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .hero {
+        height: 100%;
+        margin-bottom: 100px;
+    }
+
+    .dots {
+        margin: 150px;
+    }
+
+    .pattern {
+        bottom: 12px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .hero {
+        height: 100%;
+        margin-bottom: 50px;
+    }
+
+    .dots {
+        margin: 150px;
+    }
+
+    .box {
+        padding: 20px;
+    }
+
+    .pattern {
+        left: 70px;
+        bottom: -250px;
+    }
+}

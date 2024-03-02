@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treva Design</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="publisher" content="" />
+	<meta name="theme-color" content="#ffffff" />
+    <meta name="google-site-verification" content="" />
+    <meta name="msvalidate.01" content="" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="Treva Design" />
+	<meta property="og:image" content="./images/treva-logo.png" />
+    <meta property="twitter:card" content="" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="" />
+    <meta property="twitter:url" content="/" />
+    <meta property="twitter:title" content="Treva Design" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:image" content="./images/treva-logo.png" />
+    <meta property="twitter:image:alt" content="" />
+    <link rel="alternate"  href="/" hreflang="en-IN" />
+	<link rel="canonical" href="/" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/treva-logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="header py-4">
+            <div class="container">
+                <div class="row px-lg-5 p-2">
+                    <a href="/" title="Treva"><img src="./images/treva-logo.png" alt="Treva" title="Treva"></a>
+                </div>
+            </div>
+        </div>
+        <div class="banner d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-12 d-flex flex-column justify-content-center px-lg-5 px-3 py-5">
+                        <h1>Lorem ipsum dolor sit amet consectetur</h1>
+                        <p class="py-3">Ut enim ad minim veniam, quis nostrud ecercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat</p>
+                        <button type="button" class="btn btn-primary">Sign Up Now</button>
+                    </div>
+                    <div class="col-lg-1 d-flex flex-column justify-content-center px-lg-5 p-3"></div>
+                    <div class="col-lg-6 c0l-12 d-flex justify-content-center align-items-center px-lg-5 p-3">
+                        <div class="img-section d-flex flex-column justify-content-center align-items-center">
+                            <img src="./images/hero-image.png" alt="Hero Image" title="Hero Image" width="400px">
+                            <img src="./images/dots.png" alt="dots" title="dots" width="60px" class="dots mt-5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img src="./images/pattern.png" alt="Pattern" title="Pattern" class="pattern">
+    <section class="form-section">
+        <div class="container">
+            <div class="box col-lg-7 col-md-9 col-12 mx-auto mb-5">
+                <div class="title text-center">
+                    <h2>Contact us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                <form id="form_contact__" action="javascript:void(0);" method="post">
+                    <div class="form-group mb-3">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" class="form-control" id="name" />
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-6 col-12 mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group col-lg-6 col-12 mb-3">
+                            <label for="phone">Phone Number</label>
+                            <input type="number" name="phone" class="form-control" id="phone">
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="topic">Choose a topic</label>
+                        <select class="form-select" name="topic">
+                            <option value="">Select one...</option>
+                            <option value="1">Topic 1</option>
+                            <option value="2">Topic 2</option>
+                            <option value="3">Topic 3</option>
+                            <option value="4">Topic 4</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="message">Message</label>
+                        <textarea type="text" name="message" class="form-control" rows="5" placeholder="Type your message..."></textarea>
+                    </div>
+                    <div class="form-group mb-3 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#form_contact__').validate({
+                rules: {
+                    name: {
+                        required: true,
+                        lettersOnly: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    phone: {
+                        required: true,
+                        digits: true,
+                        minlength: 10,
+                        maxlength: 10
+                    },
+                    topic: {
+                        required: true
+                    },
+                    message: {
+                        required: true
+                    }
+                },
+                messages: {
+                    name: {
+                        required: "Please enter your name.",
+                        lettersOnly: "Please enter only alphabets in the name field."
+                    },
+                    email: {
+                        required: "Please enter your email address.",
+                        email: "Please enter a valid email address."
+                    },
+                    phone: {
+                        required: "Please enter your phone number.",
+                        digits: "Please enter only digits in the phone number field.",
+                        minlength: "Phone number must be 10 digits long.",
+                        maxlength: "Phone number must be 10 digits long."
+                    },
+                    topic: {
+                        required: "Please select a topic."
+                    },
+                    message: {
+                        required: "Please enter your message."
+                    }
+                },
+                submitHandler: function (form) {
+                    alert("Your form submitted Successfully!");
+                }
+            });
+
+            // Custom validation method for lettersOnly
+            $.validator.addMethod("lettersOnly", function (value, element) {
+                return this.optional(element) || /^[a-zA-Z\s]+$/.test(value);
+            }, "Please enter only alphabets.");
+        });
+    </script>
+</body>
+</html>
